@@ -9,5 +9,5 @@ import { SidebarMenu } from './sidebar/sidebar.component';
 export class AppComponent {
   title = 'scm works!!!';
 
-  currentMenu:SidebarMenu;
+  //currentMenu:SidebarMenu;
 }

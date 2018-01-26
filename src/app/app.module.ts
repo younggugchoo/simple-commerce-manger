@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ProductModule } from './product/product.module';
 import { CategoryModule } from './category/category.module';
-import { ScmModuleModule } from './scm-module/scm-module.module';
+import { ScmMainModule } from './scm-main/scm-main.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -14,11 +15,12 @@ import { ScmModuleModule } from './scm-module/scm-module.module';
   imports: [
     BrowserModule,
     
-    ScmModuleModule,
+    ScmMainModule,
     ProductModule,
-    CategoryModule
+    CategoryModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [],  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
